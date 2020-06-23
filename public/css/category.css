@@ -1,0 +1,71 @@
+.section-item.section-title {
+    background-color: #ececec;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.section-item.section-title .section-top h3{
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.section-item.section-title .section-bottom .breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 7px 0;
+}
+.section-item.section-title .section-bottom .breadcrumb .breadcrumb-item {
+    color: #3c3c3c;
+    margin: 0 5px;
+    font-size: .9rem;
+}
+.section-item.section-title .section-bottom .breadcrumb .breadcrumb-item.active {
+    color: #000;
+}
+.section-item.section-category-car .box-content .box-content-top {
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 20px;
+}
+.section-item.section-category-car .box-content .box-content-top .title{
+    margin-bottom: 10px;
+}
+.section-item.section-category-car .box-content .box-content-top .desc {
+    font-size: .9rem;
+    color: #3c3c3c;
+    line-height: 1.5;
+} 
+.box-content-bottom {
+    padding: 20px 0;
+}
+ .box-content-bottom .list-posts .post-item {
+    display: flex;
+    border-bottom: 1px solid #b1b1b1;
+    padding: 20px 0;
+}
+.box-content-bottom .list-posts .post-item .post-img {
+    margin-right: 20px;
+}
+.box-content-bottom .list-posts .post-item .thumb-img {
+    display: block;
+    width: 230px;
+    height: 180px;
+    overflow: hidden;
+    border: 1px solid #b1b1b1;
+    padding: 5px;
+}
+.box-content-bottom .list-posts .post-item .thumb-img img{
+    width: 100%;
+    height: 100%;
+}
+.box-content-bottom .list-posts .post-item .post-info .title {
+    padding-top: 5px;
+    margin-bottom: 10px;
+    color: #6f6f6f;
+    font-weight: bold;
+}
+.box-content-bottom .list-posts .post-item .post-info .desc {
+    font-size: .9rem;
+    line-height: 1.5;
+}

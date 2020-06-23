@@ -1,0 +1,131 @@
+:root {
+    --main-color: #fff;
+    --second-color: #000;
+    --primary-color: #e21e2a;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--main-color);
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.container {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+/* -- top header -- */
+#header {
+    box-shadow: 0 0 5px rgba(0,0,0,0.8);
+    /* margin-bottom: 5px; */
+}
+#header .top-header {
+    background-color: var(--primary-color);
+    color: var(--main-color);
+    padding: 10px 0;
+}
+#header .top-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-header .logo-header a.logo span.thumb-img {
+    display: block;
+    width: 180px;
+    height: 60px;
+    overflow: hidden;
+}
+.top-header .logo-header a.logo span.thumb-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.top-header .menu-header ul.list-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu-header ul.list-menu li {
+    position: relative;
+}
+.menu-header ul.list-menu li a{
+    color: var(--main-color);
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.menu-header ul.list-menu li ul.sub-menu {
+    position: absolute;
+    width: 200px;
+    background-color: #ff3c3ce8;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    top: 150%;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .5s;
+}
+.menu-header ul.list-menu li:hover > ul.sub-menu {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+    transition: top .5s;
+}
+.menu-header ul.list-menu li ul.sub-menu li a {
+    padding: 8px 20px;
+    font-size: .8rem;
+}
+.menu-header ul.list-menu li ul.sub-menu li:hover > a {
+    background-color: #c51717;
+}
+#header .bottom-header {
+    background-color: #e1e1e1;
+}
+#header .bottom-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-header .intro-name a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-color);
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.bottom-header ul.lits-info {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom-header ul.lits-info li a {
+    padding: 10px 20px;
+    color: #585858;
+}
+
+
+footer {
+    background-color: var(--second-color);
+    padding: 50px 0;
+    color: var(--main-color);
+}
+footer#footer .wp-footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer#footer .wp-footer .title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+footer#footer .wp-footer ul.list-info li a.info-item {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 27px;
+    color: #e1e1e1;
+}
